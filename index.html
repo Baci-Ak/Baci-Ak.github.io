@@ -1,0 +1,642 @@
+<!DOCTYPE HTML>
+<!--
+    Massively by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Bassey The Data Scientist Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+	<style>
+        .no-bullets {
+            list-style-type: none;
+            padding-left: 0; /* Optional: remove left padding */
+        }
+    </style>
+
+</head>
+<body class="is-preload">
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="fade-in">
+
+        <!-- Intro -->
+        <div id="intro">
+            <h1>Bassey Akom<br />
+                </h1>
+			<p> Data Scientist, Data Engineer, and Big Data Analyst
+            <p>Results-driven Data Professional specializing in Data Engineering, Data Science, and Data Analysis. expert in Python, R, SQL, Hadoop Ecosystem, Spark, and Azure services,
+                I excel in transforming complex data into actionable insights. My experience spans building efficient ETL pipelines, creating predictive models, and crafting interactive dashboards to drive strategic decision-making 
+				<p>Connect with me:<a href="https://www.linkedin.com/in/basseyakom/">@BaciTheDataScientist</a></p>
+            <ul class="actions">
+                <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+            </ul>
+        </div>
+
+        <!-- Header -->
+        <header id="header">
+            <a href="index.html" class="logo">Illuminating Data</a>
+        </header>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul class="links">
+                <li class="active"><a href="index.html">Projects</a></li>
+                <li><a href="generic.html">Tutorials</a></li>
+                <li><a href="elements.html">About Me</a></li>
+            </ul>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/basseyakom/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                <li><a href="https://github.com/Baci-Ak?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+            </ul>
+        </nav>
+
+        <!-- Main -->
+        <div id="main">
+
+            <!-- Featured Post -->
+            <article class="post featured">
+                <header class="major">
+                    <h2><a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis">NHS Trust Theatre Utilisation Data Analysis and Dashboard Development</a></h2>
+                    <p>This project involved a comprehensive data analysis of an NHS Trust's Theatre Utilisation dataset with the goal of improving theatre productivity. 
+                        The project leveraged advanced data processing techniques and visualization tools including SQL, Azure Data Factory (ADF), 
+                        Azure Databricks, Microsoft Excel, and Python with Streamlit.</p>
+					</header>
+					<a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis" class="video main">
+						<video width="100%" autoplay loop muted>
+							<source src="videos/nhsETL1.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</a>
+					<ul class="actions special">
+						<li><a href="#" class="button large" onclick="toggleDetails(event, 'nhs-details')">Read More</a></li>
+						<li><a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis" class="button large" target="_blank">View Project</a></li>
+					</ul>
+					
+                <div id="nhs-details" style="display: none;">
+                    <h3>Project Overview:</h3>
+                    <p>This project involved a comprehensive data analysis of an NHS Trust's Theatre Utilisation dataset with the goal of improving theatre productivity. The project leveraged advanced data processing techniques and visualization tools including SQL, Azure Data Factory (ADF), Azure Databricks, Microsoft Excel, and Python with Streamlit.</p>
+                    
+                    <h3>Key Components:</h3>
+                    
+                    <h4>1. Data Collection and Preparation:</h4>
+                    <ul class="no-bullets">
+                        <li><b>Data Source:</b> NHS Trust dummy Theatre Utilisation dataset obtained from the NHS Trust's official website in Excel format.</li>
+                        <li><b>GitHub Repository:</b> Initiated a GitHub repository for version control and organized directories for data, scripts, notebooks, reports, and dashboards.</li>
+                    </ul>
+
+                    <h4>2. ETL Process:</h4>
+                    <ul class="no-bullets">
+                        <li><b>Azure Data Factory (ADF):</b> Used ADF to ingest the dataset from the source and load it into an on-premise SQL server. Ngrok was utilized to expose the SQL server port to ADF securely due to macOS limitations.</li>
+                        <li><b>Data Transformation with Azure Databricks:</b> Connected Azure Databricks to the SQL server to perform data cleaning and transformation, ensuring data quality and consistency.</li>
+                        <li><b>Data Loading:</b> Loaded the cleaned data back into the on-premise SQL server.</li>
+                    </ul>
+
+                    <h4>3. Business Analysis with SQL and Excel:</h4>
+                    <ul class="no-bullets">
+                        <li><b>SQL Queries:</b> Conducted complex SQL queries to address key business questions related to theatre operations.</li>
+                        <li><b>Microsoft Excel Integration:</b> Connected Excel to the SQL server to load the cleaned data. Created PivotTables and PivotCharts to visualize the data and provide insights into various aspects of theatre utilization.</li>
+                    </ul>
+
+                    <h4>4. Interactive Dashboard Development:</h4>
+                    <ul class="no-bullets">
+                        <li><b>Excel Dashboard:</b> Designed an interactive dashboard in Excel, incorporating PivotTables, charts, and slicers to enable dynamic data exploration.</li>
+                        <li><b>Streamlit Dashboard:</b> Developed an interactive web-based dashboard using Python and Streamlit. This dashboard provided a user-friendly interface for stakeholders to interact with the data and derive insights.</li>
+                    </ul>
+
+                    <h4>5. Key Analyses and Insights:</h4>
+                    <ul class="no-bullets">
+                        <li><b>Treatment Function Analysis:</b> Calculated the number of cases by treatment function, split by case type (Emergency/Elective/Unknown/Not recorded).</li>
+                        <li><b>Procedure Analysis:</b> Determined the number of cases by procedure name and identified the top 20 elective procedures.</li>
+                        <li><b>Duration Analysis:</b> Calculated the average duration of elective procedures and identified the longest and shortest procedures.</li>
+                        <li><b>Ophthalmology Focus:</b> Analyzed start and finish times, late starts, and finishes for Ophthalmology treatments, and identified consultants and theatres with the most significant deviations.</li>
+                    </ul>
+
+                    <h4>Technologies Used:</h4>
+                    <ul class="no-bullets">
+                        <li><b>Data Integration and Processing:</b> Azure Data Factory, Azure Databricks, SQL.</li>
+                        <li><b>Data Storage:</b> On-premise SQL Server.</li>
+                        <li><b>Data Analysis and Visualization:</b> Microsoft Excel, SQL.</li>
+                        <li><b>Dashboard Development:</b> Python, Streamlit.</li>
+                        <li><b>Version Control:</b> GitHub.</li>
+                    </ul>
+
+                    <h4>Project Outcome:</h4>
+                    <p>The project resulted in a robust data analysis framework that provided detailed insights into theatre utilization. The interactive dashboards developed in Excel and Streamlit allowed stakeholders to visualize and interact with the data, facilitating data-driven decision-making to enhance theatre productivity and operational efficiency.</p>
+
+                    <h4>Conclusion:</h4>
+                    <p>This project demonstrates the integration of multiple technologies to perform sophisticated data analysis and create user-friendly dashboards. It highlights the ability to handle complex datasets, perform in-depth analysis, and present findings in an accessible manner, making it a valuable addition to any data analyst's portfolio.</p>
+					<p><strong>Repository:</strong><br/>
+					<a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis">View Project on GitHub</a></p>
+                </div>
+            </article>
+
+
+
+			<article class="post featured">
+                <header class="major">
+                    <h2><a href="#">Payment Arrangements System Replication</a></h2>
+                    <p>Payment Arrangements System Replication project was developed to 
+						address a critical need faced by a leading credit management company 
+						based in London, UK. The primary goal of this project was to automate 
+						and optimize the calculation of payment schedules for customers, 
+						ensuring accurate and timely payments while enhancing customer 
+						satisfaction and operational efficiency.</p>
+                </header>
+                <a href="https://github.com/Baci-Ak/Payment-Arrangements-System-Replication" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+                <ul class="actions special">
+                    <li><a href="#" class="button large" onclick="toggleDetails(event, 'Payment-details')">Read More</a></li>
+                    <li><a href="https://github.com/Baci-Ak/Payment-Arrangements-System-Replication/tree/main" class="button large" target="_blank">View Project</a></li>
+					<li><a href="https://payment-arrangements-system-replication-5eqnd6gemqryvumntnh4eb.streamlit.app/" class="button large" target="_blank">View App</a></li>
+                </ul>
+                <div id="Payment-details" style="display: none;">
+                    <h3>Problem Statement:</h3>
+                    <p>The credit management company was facing significant challenges in managing payment arrangements for their customers. The existing manual process was time-consuming, prone to errors, and unable to scale efficiently with the growing customer base. The key problems included:</p>
+                    <ul class="no-bullets">
+                        <li><b>Inaccurate Payment Schedules:</b> The manual calculation of payment schedules often led to inaccuracies, causing confusion and dissatisfaction among customers.</li>
+                        <li><b>Inefficiency:</b> The manual process consumed valuable time and resources, limiting the company's ability to focus on more strategic tasks.</li>
+						<li><b>Data Management: </b> Handling and processing large volumes of customer data manually was becoming increasingly unmanageable, leading to potential data integrity issues.</li>
+					<p>To address these challenges, I was tasked with developing an automated system that could 
+						accurately calculate payment schedules, determine the last payment dates and amounts, 
+						and generate comprehensive reports for both customers and the company's internal use.</p>
+					</ul>
+
+					<h3>Solution:</h3>
+                    <p>The solution involved developing a comprehensive Payment Arrangements System that leverages
+						 advanced data processing and analysis techniques. The system is designed to:</p>
+                    <ul class="no-bullets">
+                        <li><b>Automate Payment Schedule Calculations:</b> Automatically calculate all planned payments from the date of the first payment for every arrangement in the provided dataset.</li>
+                        <li><b>Determine Last Payment Details:</b> Accurately compute the last payment date and amount, providing crucial information for both customers and the company's financial planning.</li>
+						<li><b>Generate Comprehensive Reports: </b> Produce detailed reports that are easy to understand and actionable, improving decision-making processes for both customers and the company.</li>	
+					</ul>
+
+					<h3>Features:</h3>
+                    <ul class="no-bullets">
+                        <li><b>Data Extraction:</b> Connects to an on-premise SQL server to extract the dataset, ensuring secure and efficient data retrieval.</li>
+                        <li><b>Date Calculation:</b> Uses advanced algorithms to calculate all payment dates based on the frequency and number of payments.</li>
+						<li><b>Last Payment Details: </b> Determines the last payment date and amount for each arrangement.</li>
+						<li><b>Output Generation: </b> Exports the calculated payment schedules and processed data to Excel files for presentation and further analysis.</li>
+						<li><b>Interactive Streamlit Application: </b> An interactive web application built using Streamlit provides a user-friendly interface for uploading data, viewing results, and downloading reports.</li>	
+					</ul>
+
+
+					<h3>Technologies Used:</h3>
+					<ul class="no-bullets">
+						<li><b>R:</b> For data manipulation and calculation of payment schedules</li>
+                        <li><b>Python:</b> For developing the Streamlit application and handling data operations.</li>
+						<li><b>Streamlit: </b> For building the interactive web application.</li>
+						<li><b>Pandas:: </b> For data processing and manipulation in the Streamlit app.</li>
+						<li><b>Openpyxl: </b>  For handling Excel file operations.</li>
+						<li><b>SQL:</b> For data extraction from the on-premise SQL server.</li>
+						<li><b>GitHub: </b> For version control and project management.</li>
+					</ul>
+
+					<h3>Impact:</h3>
+					<ul class="no-bullets">
+						<li><b>Improved Customer Satisfaction:</b> By providing accurate and timely payment schedules, customers can adhere to manageable payment plans, improving their financial stability.</li>
+                        <li><b>Enhanced Operational Efficiency:</b> Automating the calculation of payment schedules reduces manual errors and saves time for the company's agents.</li>
+						<li><b>Support for Data-Driven Decisions: </b> The detailed payment schedules offer valuable insights into customer behavior and payment patterns, aiding in better decision-making.</li>
+					</ul>
+
+
+					<h3>Outcome:</h3>
+                    <p>The project successfully automated the payment scheduling process, significantly reducing manual effort and errors. The interactive Streamlit application allowed for easy data upload, processing, and report generation. The credit management company can now provide customers with accurate and timely payment schedules, enhancing customer satisfaction and operational efficiency.</p>
+                    
+					
+					<h3>Conclusion:</h3>
+                    <p>This project demonstrates the integration of data manipulation, date handling, and file exporting techniques to replicate a payment arrangements system. It highlights the ability to handle complex datasets and perform detailed calculations to produce meaningful outputs. The development and deployment of the interactive Streamlit application further enhance the usability and accessibility of the system, making it a valuable tool for both customers and the company.</p>
+					<p><strong>For more details, you can view the project on Repository:</strong><br/>
+					<a href="https://github.com/Baci-Ak/Payment-Arrangements-System-Replication/tree/main">View Project on GitHub</a></p>
+                </div>
+            </article>
+
+            <script>
+            function toggleDetails(event, detailsId) {
+                event.preventDefault();
+                var details = document.getElementById(detailsId);
+                if (details.style.display === "none") {
+                    details.style.display = "block";
+                    event.target.textContent = "Read Less";
+                } else {
+                    details.style.display = "none";
+                    event.target.textContent = "Read More";
+                }
+            }
+            </script>
+
+            <!-- Posts -->
+            <section class="posts">
+                <!-- Fraudulent Transaction Detection System -->
+                <article>
+                    <header>
+                        <h2><a href="#">Fraudulent Transaction Detection System<br /></a></h2>
+                    </header>
+                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="Fraud Detection System" /></a>
+                    <p>The Fraudulent Transaction Detection System is an advanced solution designed to identify fraudulent transactions in online financial systems swiftly. This system employs sophisticated data analysis techniques to detect suspicious activities, ensuring the security of financial transactions for users and institutions.</p>
+                    <ul class="actions special">
+                        <li><a href="#" class="button" onclick="toggleDetails(event, 'fraud-details')">Read More</a></li>
+                        <li><a href="https://github.com/Baci-Ak/Fraudulent-Transaction-Detection-System" class="button" target="_blank">View Project</a></li>
+                    </ul>
+                    <div id="fraud-details" style="display: none;">
+                        <h3>Project Overview:</h3>
+                        <p>The Fraudulent Transaction Detection System is an advanced solution designed to identify fraudulent transactions in online financial systems swiftly. This system employs sophisticated data analysis techniques to detect suspicious activities, ensuring the security of financial transactions for users and institutions.</p>
+
+                        <h3>Case Study:</h3>
+                        <p>In response to the rising challenges of online fraud, I developed this system as a data scientist for a credit card-issuing bank. The goal was to create a real-time fraud detection system using customer transaction data to safeguard the bank’s clients effectively. This project involved analyzing the problem, designing, and implementing a solution grounded in Python programming and data science principles.</p>
+
+                        <h3>Datasets:</h3>
+                        <p>The project utilizes three main datasets:</p>
+                        <ul class="no-bullets">
+                            <li><b>description.txt:</b> Contains descriptions of genuine transactions.</li>
+                            <li><b>fraud-description.txt:</b> Contains descriptions of fraudulent transactions.</li>
+                            <li><b>transaction.txt:</b> Contains 10,000 transaction records, including user IDs, transaction IDs, descriptions, amounts, transaction locations (Euclidean coordinates), and a Boolean label indicating fraudulence.</li>
+                        </ul>
+
+                        <h3>Features:</h3>
+                        <ul class="no-bullets">
+                            <li><b>Data Loading and Organization:</b> Efficiently loads and organizes transaction data from files.</li>
+                            <li><b>Transaction Analysis:</b>
+                                <ul class="no-bullets">
+                                    <li>Calculate maximum and minimum transaction amounts for users.</li>
+                                    <li>Compute the location centroid based on transaction coordinates.</li>
+                                    <li>Calculate the distance of a transaction from the user’s centroid.</li>
+                                    <li>Determine the standard deviation and variance of user transactions.</li>
+                                    <li>Detect fraudulent transactions and provide detailed transaction insights.</li>
+							<ul class="no-bullets">
+                            </li>
+                            <li><b>User Interface:</b> A user-friendly interface allows users to interact with the system seamlessly.</li>
+                        </ul>
+
+                        <h3>Usage:</h3>
+                        <ul class="no-bullets">
+                            <li>Run the program to display a menu of options.</li>
+                            <li>Select an operation by entering the corresponding number.</li>
+                            <li>Input the required user and transaction IDs as prompted.</li>
+                            <li>View the results and detailed insights for each operation.</li>
+                        </ul>
+
+                        <h3>Modules and Functions:</h3>
+                        <ul class="no-bullets">
+                            <li><b>Load_Dataset_Module.py:</b>
+							</ul>
+                                    <li>transactions(): Reads and organizes transaction data into a nested dictionary.</li>
+                                </ul>
+                            </li>
+                            <li><b>fraud_detectionSystem_module.py:</b>
+                                <ul class="no-bullets">
+                                    <li>get_max_min_transaction_amounts_for_user(trans_data, user): Calculates maximum and minimum transaction amounts.</li>
+                                    <li>calculate_location_centroid(trans_data, user): Computes the user's transaction location centroid.</li>
+                                    <li>calculate_distance_from_centroid(trans_data, user, transaction_id): Calculates the distance from the centroid.</li>
+                                    <li>calculate_standard_deviation(trans_data, user): Computes the standard deviation of transactions.</li>
+                                    <li>calculate_variance(trans_data, user): Calculates the variance of transactions.</li>
+                                    <li>fraudulent_transaction(trans_data, user, transaction_id): Detects fraud and provides transaction details.</li>
+                                </ul>
+                            </li>
+                            <li><b>Test_Module (Use_Interface):</b> Facilitates user interaction with the system.</li>
+                            <li><b>Using_the_fraud_detection_system.ipynb:</b> Demonstrates system usage.</li>
+                        </ul>
+
+                        <h3>Conclusion:</h3>
+                        <p>The Fraudulent Transaction Detection System is a robust tool designed to ensure the security of online financial transactions. Its modular architecture, combined with a user-friendly interface and advanced analytical capabilities, makes it indispensable for detecting and preventing fraudulent activities.</p>
+						<p><strong>Repository:</strong><br/>
+						<a href="https://github.com/Baci-Ak/Fraudulent-Transaction-Detection-System">View Project on GitHub</a></p>
+					</div>
+                </article>
+
+				<!-- E-commerce Analytics Dashboard -->
+				<article>
+				<header>
+					<h2><a href="#">Ecommerce Analytics Dashboard<br /></a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="images/pic03.jpg" alt="E-commerce Analytics Dashboard" /></a>
+				<p>The E-commerce Analytics Dashboard project is designed to provide comprehensive insights into an e-commerce company that specializes in unique all-occasion gifts. This project employs advanced data extraction, analysis, and visualization techniques to help the business understand its sales patterns, customer behaviors, product performance, and order trends. The final deliverable is an interactive, user-friendly dashboard that allows stakeholders to explore data and derive actionable insights.</p>
+				<ul class="actions special">
+					<li><a href="#" class="button" onclick="toggleDetails(event, 'ecommerce-details')">Read More</a></li>
+					<li><a href="https://github.com/Baci-Ak/Ecommerce-Analytics-Dashboard" class="button" target="_blank">View Project</a></li>
+					<li><a href="https://public.tableau.com/app/profile/baci.ak/viz/E_commerce_analytics_Dashboard/E-commerceAnalyticsDashboard" class="button" target="_blank">View Dashboard</a></li>
+				</ul>
+				<div id="ecommerce-details" style="display: none;">
+					<h3>Project Overview:</h3>
+					<p>The E-commerce Analytics Dashboard project is designed to provide comprehensive insights into an e-commerce company that specializes in unique all-occasion gifts. This project employs advanced data extraction, analysis, and visualization techniques to help the business understand its sales patterns, customer behaviors, product performance, and order trends. The final deliverable is an interactive, user-friendly dashboard that allows stakeholders to explore data and derive actionable insights.</p>
+
+					<h3>Key Components:</h3>
+					
+					<h4>1. Data Extraction:</h4>
+					<ul class="no-bullets">
+						<li><b>Tool Used:</b> Apache NiFi</li>
+						<li><b>Description:</b> Automated the data flow to efficiently extract data from an online retail dataset and load it into a MySQL database.</li>
+					</ul>
+
+					<h4>2. Data Cleaning:</h4>
+					<ul class="no-bullets">
+						<li><b>Tool Used:</b> Python</li>
+						<li><b>Description:</b> Cleaned and preprocessed the dataset to handle missing values, outliers, and inconsistencies. Ensured the data quality for accurate analysis.</li>
+					</ul>
+
+					<h4>3. Data Analysis:</h4>
+					<ul class="no-bullets">
+						<li><b>Tool Used:</b> SQL</li>
+						<li><b>Description:</b> Conducted extensive data analysis using SQL queries. Key metrics and analyses included sales trends, customer segmentation, repeat purchase rates, and product performance. Created database views to support visualization.</li>
+					</ul>
+
+					<h4>4. Data Visualization:</h4>
+					<ul class="no-bullets">
+						<li><b>Tool Used:</b> Tableau</li>
+						<li><b>Description:</b> Developed a series of interactive visualizations and charts that represent the analytical insights. These visualizations help in understanding the data at a glance and exploring deeper insights.</li>
+					</ul>
+
+					<h4>5. Dashboard Creation:</h4>
+					<ul class="no-bullets">
+						<li><b>Tool Used:</b> Tableau</li>
+						<li><b>Description:</b> Compiled the visualizations into a cohesive, interactive dashboard. This dashboard allows users to explore various aspects of the business data dynamically, facilitating better decision-making.</li>
+					</ul>
+
+					<h3>Project Outline:</h3>
+					
+					<h4>Data Extraction:</h4>
+					<p>Utilized Apache NiFi to automate the data extraction process, loading data directly into a MySQL database for efficient storage and access.</p>
+					
+					<h4>Data Cleaning:</h4>
+					<p>Leveraged Python scripts to clean and preprocess the data, addressing issues such as missing values, duplicates, and outliers to ensure data integrity.</p>
+					
+					<h4>Data Analysis:</h4>
+					<p>Performed detailed data analysis using SQL. Key analyses included calculating sales metrics, identifying customer segments, and analyzing repeat purchase behavior. Created SQL views to streamline the visualization process.</p>
+					
+					<h4>Data Visualization:</h4>
+					<p>Developed interactive visualizations in Tableau, highlighting key insights from the analysis. Visualizations included sales trends, customer demographics, and product performance.</p>
+					
+					<h4>Dashboard Creation:</h4>
+					<p>Designed and deployed a comprehensive Tableau dashboard, providing stakeholders with an interactive tool to explore and understand the data.</p>
+					
+					<h3>Technologies Used:</h3>
+					<ul class="no-bullets">
+						<li><b>Apache NiFi:</b> For automated data extraction and workflow management.</li>
+						<li><b>MySQL:</b> As a relational database to store and manage the data.</li>
+						<li><b>Python:</b> For data cleaning and preprocessing.</li>
+						<li><b>SQL:</b> For data analysis and query execution.</li>
+						<li><b>Tableau:</b> For creating visualizations and building the interactive dashboard.</li>
+					</ul>
+
+					<h3>Project Outcome:</h3>
+					<p>The E-commerce Analytics Dashboard project resulted in a powerful tool that enables the e-commerce company to gain deep insights into their business operations. The interactive dashboard offers a user-friendly interface for exploring data, uncovering trends, and making data-driven decisions. By integrating various technologies and leveraging their strengths, the project demonstrates a robust approach to data analytics and visualization.</p>
+
+					<h3>Conclusion:</h3>
+					<p>This project exemplifies the integration of data engineering, data analysis, and data visualization to create a meaningful and actionable business intelligence tool. It showcases the ability to handle complex datasets, perform thorough analysis, and present findings in an engaging and accessible manner, making it an excellent addition to any data analyst's portfolio.</p>
+					<p><strong>Repository:</strong><br/>
+					<a href="https://github.com/Baci-Ak/E-commerce-Data-Analysis-Dashboard">View Project on GitHub</a></p>
+				</div>
+			</article>
+
+			<article>
+				<header>
+					<h2><a href="#">Hypothesis Testing System<br /></a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="images/pic04.jpg" alt="Hypothesis Testing System" /></a>
+				<p>The Hypothesis Testing System is a user-friendly web application designed to simplify the process of performing hypothesis tests. This system supports multiple data formats and provides intuitive options for test type selection, item specification, and significance level setting, making it an invaluable tool for data analysts and researchers.</p>
+				<ul class="actions special">
+					<li><a href="#" class="button" onclick="toggleDetails(event, 'hypothesis-details')">Read More</a></li>
+					<li><a href="https://github.com/Baci-Ak/Hypothesis-Testing-System" class="button" target="_blank">View Project</a></li>
+				</ul>
+				<div id="hypothesis-details" style="display: none;">
+					<h3>Project Overview:</h3>
+					<p>This web-based application for hypothesis testing allows users to upload datasets in various formats, select the type of hypothesis test, specify items to test, and set the significance level. It is built to facilitate hypothesis testing with ease and precision.</p>
+
+					<h3>Features:</h3>
+					<ul class="no-bullets">
+						<li><b>Upload Data:</b> Users can upload datasets in CSV, Excel, or SAS7BDAT formats.</li>
+						<li><b>Select Test Type:</b> Users can choose between one-tailed and two-tailed hypothesis tests.</li>
+						<li><b>Specify Items:</b> Users can specify the items to be tested within the uploaded dataset.</li>
+						<li><b>Set Significance Level:</b> Users can set the significance level (alpha) for the hypothesis test.</li>
+					</ul>
+
+					<h3>Getting Started:</h3>
+					<h4>Prerequisites:</h4>
+					<ul class="no-bullets">
+						<li>Python 3.x</li>
+						<li>Flask</li>
+						<li>Pandas</li>
+						<li>NumPy</li>
+						<li>SciPy</li>
+					</ul>
+					
+					<h4>Installation:</h4>
+					<ul class="no-bullets">
+						<li>Clone the repository: <code>git clone https://github.com/Baci-Ak/Hypothesis-Testing-System.git</code></li>
+						<li>Navigate to the project directory: <code>cd hypothesis-testing-system</code></li>
+						<li>Install the required dependencies: <code>pip install -r requirements.txt</code></li>
+					</ul>
+
+					<h4>Usage:</h4>
+					<ul class="no-bullets">
+						<li>Start the Flask server: <code>python app.py</code></li>
+						<li>Open your web browser and go to <code>http://localhost:5000</code></li>
+						<li>Upload your dataset and perform hypothesis tests using the web interface.</li>
+					</ul>
+
+					<h3>Project Outcome:</h3>
+					<p>The Hypothesis Testing System simplifies the process of performing hypothesis tests, making it accessible to users with varying levels of statistical expertise. By providing a web-based interface, it allows users to focus on analysis rather than the technicalities of data processing and statistical computations.</p>
+
+					<h3>Conclusion:</h3>
+					<p>This project demonstrates the potential of web-based applications in making complex statistical analysis accessible and user-friendly. The Hypothesis Testing System is an excellent example of how technology can simplify and streamline analytical tasks, providing significant value to data analysts and researchers.</p>
+					<p><strong>Repository:</strong><br/>
+						<a href="https://github.com/Baci-Ak/Hypothesis-Testing-System">View Project on GitHub</a></p>
+				</div>
+			</article>
+
+
+			<article>
+				<header>
+					<h2><a href="#">Sustainable Development Goal 3 (SDG3) Progress Analysis and Prediction<br /></a></h2>
+				</header>
+				<a href="#" class="image fit"><img src="images/pic05.jpg" alt="Sustainable Development Goal 3 (SDG3) Progress Analysis and Prediction" /></a>
+				<p>This project focuses on analyzing and predicting the progress and performance of Sustainable Development Goal 3 (SDG3) - Good Health and Well-being. SDG3 aims to ensure healthy lives and promote well-being for all at all ages, with specific targets related to maternal and child health, infectious diseases, and healthcare infrastructure. The project leverages data analysis and machine learning techniques to provide insights into the progress made towards achieving these targets.</p>
+				<ul class="actions special">
+					<li><a href="#" class="button" onclick="toggleDetails(event, 'Sustainable-details')">Read More</a></li>
+					<li><a href="https://github.com/Baci-Ak/Sustainable-Development-Goal-3-SDG3-Progress-Analysis-and-Prediction" class="button" target="_blank">View Project</a></li>
+				</ul>
+				<div id="Sustainable-details" style="display: none;">
+					<h3>Overview:</h3>
+					<p>This project focuses on analyzing and predicting the progress and performance of Sustainable Development Goal 3 (SDG3) - Good Health and Well-being. SDG3 aims to ensure healthy lives and promote well-being for all at all ages, with specific targets related to maternal and child health, infectious diseases, and healthcare infrastructure. The project leverages data analysis and machine learning techniques to provide insights into the progress made towards achieving these targets.</p>
+
+					<h3>Objectives:</h3>
+					<ul class="no-bullets">
+						<li><b>Quantify SDG3 Progress:</b> Develop a composite index to represent the progress towards SDG3.</li>
+						<li><b>Data Analysis:</b> Perform extensive exploratory data analysis (EDA) to uncover patterns and trends in the data.</li>
+						<li><b>Prediction Models:</b> Apply machine learning models to predict future progress based on historical data.</li>
+						<li><b>Policy Guidance:</b> Provide actionable insights and recommendations for policymakers.</li>
+					</ul>
+
+					<h3>Methodology</h3>
+					<h4>1. SDG3 Composite Index Creation</h4>
+					<p><p>To create a comprehensive and quantifiable representation of SDG3 progress, we developed a composite index by combining multiple health and well-being indicators. The creation process involved the following steps:</p></p>
+					<ul class="no-bullets">
+						<li><b>Indicator Transformation:</b> Standardization was applied to ensure that all indicators were on a comparable scale.</li>
+						<li><b>Distance Measure Calculation:</b> Euclidean Distance was used to quantify the difference between each country's indicator values and their respective targets. </li>
+						<li><b>SDG3 Composite Index Calculation:</b> The composite index was computed by averaging the distance measures obtained from the Euclidean distance calculations. This provided an aggregated measure of performance, capturing each country's overall progress towards SDG3.</li>
+					</ul>
+					
+					<h4>2. Data Pre-processing</h4>
+					<p><p>The data pre-processing involved cleaning the dataset, handling missing values, and standardizing the indicators to ensure consistency and accuracy in the analysis.</p></p>
+					<ul class="no-bullets">
+					</ul>
+
+					<h4>3. Exploratory Data Analysis (EDA)</h4>
+					<p><p>EDA was performed to understand the patterns, distributions, and relationships within the dataset, focusing on key indicators of health and well-being.</p></p>
+					<ul class="no-bullets">
+					</ul>
+
+					<h4>4. Machine Learning Models</h4>
+					<p><p>Multiple machine learning models, including Linear Regression, Random Forest, and Support Vector Machines (SVM), were developed to analyze and predict SDG3 progress. The models were evaluated based on their accuracy and predictive power.</p></p>
+
+					<h3>Key Findings</h3>
+					<ul class="no-bullets">
+						<li><b>Regional Variations:</b> Significant variations in SDG3 indicators were observed across different regions, with some areas showing more progress than others.</li>
+						<li><b>Improving Trends:</b> The composite index indicated an improving trend in overall health and well-being over time. </li>
+						<li><b>Key Influencers:</b> Correlation analysis identified key indicators that significantly influence SDG3 progress, providing insights into areas needing attention.</li>
+						<li><b>Predictive Insights:</b> The Random Forest model demonstrated high effectiveness in predicting future progress, offering valuable insights for policymaking.</li>
+					</ul>
+
+					<h3>Technologies Used</h3>
+					<ul class="no-bullets">
+						<li>Python 3.x</li>
+						<li>Pandas</li>
+						<li>NumPy</li>
+						<li>SciPy</li>
+						<li>Scikit-learn</li>
+						<li>Matplotlib/Seaborn for visualization</li>
+					</ul>
+
+					<h3>Impact:</h3>
+					<p>This project provides a robust framework for analyzing and predicting the progress of SDG3. By developing a quantifiable representation of SDG3 progress and leveraging machine learning techniques, it offers valuable insights that can guide policymakers in making informed decisions to enhance health and well-being outcomes globally.</p>
+
+					<h3>Conclusion:</h3>
+					<p>The SDG3 Progress Analysis and Prediction project is a significant step towards understanding and advancing global health objectives. The composite index and predictive models developed in this project serve as powerful tools for tracking progress, identifying gaps, and informing strategic interventions to achieve SDG3 targets.</p>
+					<p><strong>Repository:</strong><br/>
+						<a href="https://github.com/Baci-Ak/Sustainable-Development-Goal-3-SDG3-Progress-Analysis-and-Prediction">View Project on GitHub</a></p>
+				</div>
+			</article>
+							<article>
+								<header>
+									<h2><a href="#">Personalized Book Recommendation System<br />
+									</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="Book Recommendation System" /></a>
+								<p>This project aims to build an intelligent and personalized book recommendation system that suggests relevant books to users based on their preferences and similarities with other users. By leveraging both content-based and collaborative filtering techniques, the system provides accurate and diverse recommendations, enhancing the user experience and potentially increasing sales for an online book selling company.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button" onclick="toggleDetails(event, 'Book-details')">Read More</a></li>
+									<li><a href="https://github.com/Baci-Ak/Book_recommendation_system" class="button" target="_blank">View Project</a></li>
+								</ul>
+								<div id="Book-details" style="display: none;">
+							   		
+									<h3>Business Context and Problem</h3>
+									<p>In the era of information overload, navigating the vast array of available books online can be overwhelming for customers. This challenge has led to a decline in sales for an online book retailer, as customers struggle to find books that match their interests. This project addresses this issue by developing a recommendation engine that simplifies the book discovery process, thereby improving customer satisfaction and boosting sales.</p>
+
+									<h3>Project Objective</h3>
+									<p>The objective of this project was to design and implement a sophisticated recommendation engine that provides personalized book suggestions to users, ultimately enhancing the company's sales and improving the customers' online shopping experience.</p>
+									<p><strong>Repository:</strong><br/>
+									<a href="https://github.com/Baci-Ak/Book_recommendation_system">View Project on GitHub</a></p>
+								</div>
+							</article>
+							
+							
+							<article>
+								<header>
+									<span class="date">April 7, 2017</span>
+									<h2><a href="#">Augue lorem<br />
+									primis vestibulum</a></h2>
+								</header>
+								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+								<ul class="actions special">
+									<li><a href="#" class="button">Full Story</a></li>
+								</ul>
+							</article>
+						</section>
+
+					<!-- Footer -->
+						<footer>
+							<div class="pagination">
+								<!--<a href="#" class="previous">Prev</a>-->
+								<a href="#" class="page active">1</a>
+								<a href="#" class="page">2</a>
+								<a href="#" class="page">3</a>
+								<span class="extra">&hellip;</span>
+								<a href="#" class="page">8</a>
+								<a href="#" class="page">9</a>
+								<a href="#" class="page">10</a>
+								<a href="#" class="next">Next</a>
+							</div>
+						</footer>
+
+				</div>
+
+			<!-- Footer -->
+				<footer id="footer">
+					<section>
+						<form method="post" action="https://formspree.io/f/xqkrogby">
+							<div class="fields">
+								<div class="field">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="3"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+					</section>
+					<section class="split contact">
+						<section class="alt">
+							<h3>Address</h3>
+							<p>London, Uk<br />
+							</p>
+						</section>
+						<section>
+							<h3>Email</h3>
+							<p><a href="mailto:bassi.cim@gmail.com">Send Email</a></p>
+						</section>
+						<section>
+							<h3>Social</h3>
+							<ul class="icons alt">
+								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							</ul>
+						</section>
+					</section>
+				</footer>
+
+			<!-- Copyright -->
+				<div id="copyright">
+					<ul><li>&copy; Light</li><li>Design: <a href="#">Baci</a></li></ul>
+				</div>
+
+		</div>
+
+	<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+</body>
+</html>
