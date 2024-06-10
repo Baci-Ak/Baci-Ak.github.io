@@ -4,36 +4,54 @@
     html5up.net | @ajlkn
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
+<html lang="en">
 <head>
     <title>Bassey Akom – Data Scientist and Big Data Analyst</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Explore Bassey Akom's professional portfolio, featuring projects in data science, big data analytics, and insights into advanced data manipulation techniques.">
+    <meta name="description" content="Explore Bassey Akom's professional portfolio, featuring projects in data science, big data analytics, and insights into advanced data manipulation techniques." />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	
-	<style>
+    <style>
         .no-bullets {
             list-style-type: none;
             padding-left: 0; /* Optional: remove left padding */
         }
+        .projects-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        .projects-header h2 {
+            font-size: 2em;
+            font-weight: bold;
+            padding: 0 20px;
+            position: relative;
+        }
+        .projects-header::before,
+        .projects-header::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, transparent, #333, transparent);
+            margin: 0 20px;
+        }
     </style>
-
 </head>
 <body class="is-preload">
-
     <!-- Wrapper -->
     <div id="wrapper" class="fade-in">
-
         <!-- Intro -->
         <div id="intro">
-            <h1>Bassey Akom<br />
-                </h1>
-			<p> Data Scientist, Data Engineer, and Big Data Analyst
-            <p>Results-driven Data Professional specializing in Data Engineering, Data Science, and Data Analysis. expert in Python, R, SQL, Hadoop Ecosystem, Spark, and Azure services,
-                I excel in transforming complex data into actionable insights. My experience spans building efficient ETL pipelines, creating predictive models, and crafting interactive dashboards to drive strategic decision-making 
-				<p>Connect with me:<a href="https://www.linkedin.com/in/basseyakom/">@BaciTheDataScientist</a></p>
+            <h1>Bassey Akom</h1>
+            <div style="position: relative; width: 200px; height: 200px; border-radius: 50%; overflow: hidden; margin: auto; border: 4px solid white;">
+                <img src="images/profile_logo2.png" alt="Bassey Akom" style="width: 100%; height: auto;">
+            </div>
+            <p>Data Scientist, Data Engineer, and Big Data Analyst</p>
+            <p>Results-driven Data Professional specializing in Data Engineering, Data Science, and Data Analysis. Expert in Python, R, SQL, Hadoop Ecosystem, Spark, and Azure services, I excel in transforming complex data into actionable insights. My experience spans building efficient ETL pipelines, creating predictive shows, and crafting interactive dashboards to drive strategic decision-making.</p>
+            <p>Connect with me: <a href="https://www.linkedin.com/in/basseyakom/">@Baci</a></p>
             <ul class="actions">
                 <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
@@ -47,51 +65,56 @@
         <!-- Nav -->
         <nav id="nav">
             <ul class="links">
-                <li class="active"><a href="index.html">Projects</a></li>
+                <li class="active"><a href="index.html">Home</a></li>
+				<li><a href="elements.html">About Me</a></li>
                 <li><a href="generic.html">Tutorials</a></li>
-                <li><a href="elements.html">About Me</a></li>
+				<li><a href="post.html">Posts</a></li>
             </ul>
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/basseyakom/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-                <li><a href="https://github.com/Baci-Ak?tab=repositories" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-            </ul>
+				<li><a href="https://www.linkedin.com/in/basseyakom/" class="icon brands fa-linkedin-in" aria-label="LinkedIn"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Baci-Ak?tab=repositories" class="icon brands fa-github" aria-label="GitHub"><span class="label">GitHub</span></a></li>
+				<li><a href="#" class="icon brands fa-twitter" aria-label="Twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f" aria-label="Facebook"><span class="label">Facebook</span></a></li>
+			</ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
+            <!-- Projects Header -->
+            <div class="projects-header">
+                <h2>Projects</h2>
+            </div>
 
+				
             <!-- Featured Post -->
             <article class="post featured">
                 <header class="major">
-                    <h2><a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis">NHS Trust Theatre Utilisation Data Analysis and Dashboard Development</a></h2>
-                    <p>This project involved a comprehensive data analysis of an NHS Trust's Theatre Utilisation dataset with the goal of improving theatre productivity. 
+                    <h2><a href="https://github.com/Baci-Ak/Theatre-Utilisation-analysis-system">Theatre Utilisation Data Analysis System and Dashboard</a></h2>
+                    <p>This project involved a comprehensive data analysis of Theatre Utilisation dataset with the goal of promoting advanced theatre analytics and improving theatre productivity. 
                         The project leveraged advanced data processing techniques and visualization tools including SQL, Azure Data Factory (ADF), 
                         Azure Databricks, Microsoft Excel, and Python with Streamlit.</p>
 					</header>
-					<a href="#" class="video main">
-						<video width="100%" autoplay loop muted>
-							<source src="videos/nhsETL1.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
+					<a href="#" class="image main">
+						<img src="images/theatre_utilization2.png" alt="Theatre Utilization Dashboard" style="width: 100%; display: block;">
 					</a>
 					<ul class="actions special">
 						<li><a href="#" class="button large" onclick="toggleDetails(event, 'nhs-details')">Read More</a></li>
-						<li><a href="https://github.com/Baci-Ak/nhs-theatre-utilisation-analysis" class="button large" target="_blank">View Project</a></li>
+						<li><a href="https://github.com/Baci-Ak/Theatre-Utilisation-analysis-system" class="button large" target="_blank">View Project</a></li>
+						<li><a href="https://theatre-utilisation-analysis-system.streamlit.app/" class="button large" target="_blank">View App</a></li>
 					</ul>
 					
                 <div id="nhs-details" style="display: none;">
                     <h3>Project Overview:</h3>
-                    <p>This project involved a comprehensive data analysis of an NHS Trust's Theatre Utilisation dataset with the goal of improving theatre productivity. The project leveraged advanced data processing techniques and visualization tools including SQL, Azure Data Factory (ADF), Azure Databricks, Microsoft Excel, and Python with Streamlit.</p>
+                    <p>This project involved a comprehensive data analysis of an Theatre Utilisation dataset with the goal of promoting advanced theatre analytics and improving theatre productivity. The project leveraged advanced data processing techniques and visualization tools including SQL, Azure Data Factory (ADF), Azure Databricks, Microsoft Excel, and Python with Streamlit.</p>
                     
                     <h3>Key Components:</h3>
                     
-                    <h4>1. Data Collection and Preparation:</h4>
-                    <ul class="no-bullets">
-                        <li><b>Data Source:</b> NHS Trust dummy Theatre Utilisation dataset obtained from the NHS Trust's official website in Excel format.</li>
-                        <li><b>GitHub Repository:</b> Initiated a GitHub repository for version control and organized directories for data, scripts, notebooks, reports, and dashboards.</li>
-                    </ul>
+                	<h4>1. Data Collection and Preparation:</h4>
+					<ul class="no-bullets">
+						<li><b>Data Source:</b> <a href="https://ckan.publishing.service.gov.uk/dataset" target="_blank">Trust dummy Theatre Utilisation dataset</a> obtained from the NHS Trust's official website in Excel format.</li>
+						<li><b>GitHub Repository:</b> Initiated a <a href="https://github.com/Baci-Ak/Theatre-Utilisation-analysis-system" target="_blank">GitHub repository</a> for version control and organized directories for data, scripts, notebooks, reports, and application.</li>
+					</ul>
+					
 
                     <h4>2. ETL Process:</h4>
                     <ul class="no-bullets">
@@ -143,19 +166,19 @@
 
 			<article class="post featured">
                 <header class="major">
-                    <h2><a href="#">Payment Arrangements System Replication</a></h2>
-                    <p>Payment Arrangements System Replication project was developed to 
+                    <h2><a href="#">Payment Arrangements System</a></h2>
+                    <p>Payment Arrangements System project was developed to 
 						address a critical need faced by a leading credit management company 
 						based in London, UK. The primary goal of this project was to automate 
 						and optimize the calculation of payment schedules for customers, 
 						ensuring accurate and timely payments while enhancing customer 
 						satisfaction and operational efficiency.</p>
                 </header>
-                <a href="https://github.com/Baci-Ak/Payment-Arrangements-System-Replication" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+                <a href="#" class="image main"><img src="images/payment_replication_system.png" alt="" /></a>
                 <ul class="actions special">
                     <li><a href="#" class="button large" onclick="toggleDetails(event, 'Payment-details')">Read More</a></li>
                     <li><a href="https://github.com/Baci-Ak/Payment-Arrangements-System-Replication/tree/main" class="button large" target="_blank">View Project</a></li>
-					<li><a href="https://payment-arrangements-system-replication-5eqnd6gemqryvumntnh4eb.streamlit.app/" class="button large" target="_blank">View App</a></li>
+					<li><a href="https://payment-arrangements-system.streamlit.app/" class="button large" target="_blank">View App</a></li>
                 </ul>
                 <div id="Payment-details" style="display: none;">
                     <h3>Problem Statement:</h3>
@@ -239,7 +262,7 @@
                     <header>
                         <h2><a href="#">Fraudulent Transaction Detection System<br /></a></h2>
                     </header>
-                    <a href="#" class="image fit"><img src="images/pic02.jpg" alt="Fraud Detection System" /></a>
+                    <a href="#" class="image fit"><img src="images/fruad.png" alt="Fraud Detection System" /></a>
                     <p>The Fraudulent Transaction Detection System is an advanced solution designed to identify fraudulent transactions in online financial systems swiftly. This system employs sophisticated data analysis techniques to detect suspicious activities, ensuring the security of financial transactions for users and institutions.</p>
                     <ul class="actions special">
                         <li><a href="#" class="button" onclick="toggleDetails(event, 'fraud-details')">Read More</a></li>
@@ -316,7 +339,7 @@
 				<header>
 					<h2><a href="#">Ecommerce Analytics Dashboard<br /></a></h2>
 				</header>
-				<a href="#" class="image fit"><img src="images/pic03.jpg" alt="E-commerce Analytics Dashboard" /></a>
+				<a href="#" class="image fit"><img src="images/E_commerce.png" alt="E-commerce Analytics Dashboard" /></a>
 				<p>The E-commerce Analytics Dashboard project is designed to provide comprehensive insights into an e-commerce company that specializes in unique all-occasion gifts. This project employs advanced data extraction, analysis, and visualization techniques to help the business understand its sales patterns, customer behaviors, product performance, and order trends. The final deliverable is an interactive, user-friendly dashboard that allows stakeholders to explore data and derive actionable insights.</p>
 				<ul class="actions special">
 					<li><a href="#" class="button" onclick="toggleDetails(event, 'ecommerce-details')">Read More</a></li>
@@ -399,7 +422,7 @@
 				<header>
 					<h2><a href="#">Hypothesis Testing System<br /></a></h2>
 				</header>
-				<a href="#" class="image fit"><img src="images/pic04.jpg" alt="Hypothesis Testing System" /></a>
+				<a href="#" class="image fit"><img src="images/hypothesis.png" alt="Hypothesis Testing System" /></a>
 				<p>The Hypothesis Testing System is a user-friendly web application designed to simplify the process of performing hypothesis tests. This system supports multiple data formats and provides intuitive options for test type selection, item specification, and significance level setting, making it an invaluable tool for data analysts and researchers.</p>
 				<ul class="actions special">
 					<li><a href="#" class="button" onclick="toggleDetails(event, 'hypothesis-details')">Read More</a></li>
@@ -456,7 +479,7 @@
 				<header>
 					<h2><a href="#">Sustainable Development Goal 3 (SDG3) Progress Analysis and Prediction<br /></a></h2>
 				</header>
-				<a href="#" class="image fit"><img src="images/pic05.jpg" alt="Sustainable Development Goal 3 (SDG3) Progress Analysis and Prediction" /></a>
+				<a href="#" class="image fit"><img src="images/sdg3.jpg" alt="Sustainable Development Goal 3 (SDG3) Progress Analysis and Prediction" /></a>
 				<p>This project focuses on analyzing and predicting the progress and performance of Sustainable Development Goal 3 (SDG3) - Good Health and Well-being. SDG3 aims to ensure healthy lives and promote well-being for all at all ages, with specific targets related to maternal and child health, infectious diseases, and healthcare infrastructure. The project leverages data analysis and machine learning techniques to provide insights into the progress made towards achieving these targets.</p>
 				<ul class="actions special">
 					<li><a href="#" class="button" onclick="toggleDetails(event, 'Sustainable-details')">Read More</a></li>
@@ -528,7 +551,7 @@
 									<h2><a href="#">Personalized Book Recommendation System<br />
 									</a></h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/pic06.jpg" alt="Book Recommendation System" /></a>
+								<a href="#" class="image fit"><img src="images/recommendation_sys.png" alt="Book Recommendation System" /></a>
 								<p>This project aims to build an intelligent and personalized book recommendation system that suggests relevant books to users based on their preferences and similarities with other users. By leveraging both content-based and collaborative filtering techniques, the system provides accurate and diverse recommendations, enhancing the user experience and potentially increasing sales for an online book selling company.</p>
 								<ul class="actions special">
 									<li><a href="#" class="button" onclick="toggleDetails(event, 'Book-details')">Read More</a></li>
@@ -549,17 +572,201 @@
 							
 							<article>
 								<header>
-									<span class="date">April 7, 2017</span>
-									<h2><a href="#">Augue lorem<br />
-									primis vestibulum</a></h2>
+									<h2><a href="#">Fractal Derivatives in Data Science<br /></a></h2>
 								</header>
-								<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
-								<ul class="actions special">
-									<li><a href="#" class="button">Full Story</a></li>
-								</ul>
+									<a href="#" class="image fit"><img src="images/fractals_banner.png" alt="Fractals" /></a>
+									<p>Fractals are complex structures that exhibit self-similarity and intricate patterns at every scale. They have applications across various fields, including data science, where they help in understanding non-linear patterns, complex systems, and dimensionality reduction. Let's dive into the fascinating world of fractals, starting from the basics and moving to advanced concepts and mathematical derivations.</p>
+									<ul class="actions special">
+										<li><a href="#" class="button" onclick="toggleDetails(event, 'fractals-details')">Read More</a></li>
+									</ul>
+									<div id="fractals-details" style="display: none;">
+										<h3>Introduction</h3>
+										<p>Fractal derivatives extend traditional calculus to model complex, non-linear phenomena often encountered in data science. By incorporating scaling properties of fractals, these derivatives offer new ways to analyze and interpret data.</p>
+										
+										<h3>Fractal Derivatives: Definitions and Concepts</h3>
+										
+										<h4>Step 1: Basic Concept of Velocity and Fractal Scaling</h4>
+										
+										<h4>Velocity in Euclidean Space</h4>
+										<p><strong>Definition:</strong></p>
+										<p>Velocity (\(v\)) in Euclidean space is defined as the rate of change of distance (\(dx\)) with respect to time (\(dt\)).</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ v = \frac{dx}{dt} \]</p>
+										
+										<h4>Fractal Velocity in Fractal Spacetime</h4>
+										<p><strong>Definition:</strong></p>
+										<p>Fractal velocity (\(v'\)) in fractal spacetime is defined as the rate of change of distance (\(dx\)) scaled by a factor \(\beta\) with respect to time (\(dt\)) scaled by a factor \(\alpha\).</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ v' = \frac{dx^\beta}{dt^\alpha} \]</p>
+										<p>where:</p>
+										<ul>
+											<li>\(dx^\beta\) represents the change in position scaled by factor \(\beta\).</li>
+											<li>\(dt^\alpha\) represents the change in time scaled by factor \(\alpha\).</li>
+										</ul>
+										
+										<h4>Diagram: Velocity in Euclidean and Fractal Space</h4>
+										<!-- Diagram placeholder -->
+										<a href="#" class="image fit"><img src="images/Velocity_Diagram.png" alt="Velocity in Euclidean and Fractal Space" /></a>
+										
+										<h4>Step 2: Introducing Fractal Derivative</h4>
+										
+										<p><strong>Limit Definition of Fractal Derivative:</strong></p>
+										
+										<h4>Traditional Derivative</h4>
+										<p><strong>Definition:</strong></p>
+										<p>The derivative of a function \(f(t)\) with respect to \(t\) is defined as the rate at which the function value changes as the input \(t\) changes.</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ \frac{df(t)}{dt} = \lim_{t_1 \to t} \frac{f(t_1) - f(t)}{t_1 - t} \]</p>
+										
+										<h4>Fractal Derivative</h4>
+										<p><strong>Definition:</strong></p>
+										<p>The fractal derivative modifies the traditional derivative by incorporating a fractal scaling factor \(\alpha\), which adjusts the rate of change to account for fractal properties.</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ \frac{\partial f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f(t_1) - f(t)}{t_1^\alpha - t^\alpha} \]</p>
+										<p>where:</p>
+										<ul>
+											<li>\(\frac{\partial f(t)}{\partial t^\alpha}\) denotes the fractal derivative of \(f(t)\).</li>
+											<li>\(t_1^\alpha\) and \(t^\alpha\) represent the scaled time points.</li>
+										</ul>
+										
+										<p><strong>Derivation:</strong></p>
+										<ol>
+											<li>Start with the traditional derivative definition:
+												<p>\[ \frac{df(t)}{dt} = \lim_{t_1 \to t} \frac{f(t_1) - f(t)}{t_1 - t} \]</p>
+											</li>
+											<li>Incorporate fractal scaling for time:
+												<p>\[ t \to t^\alpha \]</p>
+												<p>\[ t_1 \to t_1^\alpha \]</p>
+											</li>
+											<li>Apply the scaling to the derivative definition:
+												<p>\[ \frac{\partial f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f(t_1) - f(t)}{t_1^\alpha - t^\alpha} \]</p>
+											</li>
+										</ol>
+										
+										<h4>Diagram: Fractal Derivative</h4>
+										<!-- Diagram placeholder -->
+										<a href="#" class="image fit"><img src="images/Fractal_Derivative.png" alt="Fractal Derivative" /></a>
+										
+										<h4>Step 3: Generalized Fractal Derivative</h4>
+										
+										<p><strong>General Definition:</strong></p>
+										
+										<h4>Traditional Higher-Order Derivative</h4>
+										<p><strong>Definition:</strong></p>
+										<p>The higher-order derivative of a function \(f(t)\) is the derivative of its derivative, representing the rate of change of the rate of change.</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ \frac{d^2 f(t)}{dt^2} = \lim_{t_1 \to t} \frac{\frac{df(t_1)}{dt} - \frac{df(t)}{dt}}{t_1 - t} \]</p>
+										
+										<h4>Generalized Fractal Derivative</h4>
+										<p><strong>Definition:</strong></p>
+										<p>The generalized fractal derivative extends the concept of fractal derivatives to higher orders by introducing another scaling factor \(\beta\), which adjusts the power to which the function is raised.</p>
+										<p><strong>Formula:</strong></p>
+										<p>\[ \frac{\partial^\beta f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f^\beta(t_1) - f^\beta(t)}{t_1^\alpha - t^\alpha}, \quad \alpha > 0, \beta > 0 \]</p>
+										<p>where:</p>
+										<ul>
+											<li>\(\frac{\partial^\beta f(t)}{\partial t^\alpha}\) denotes the generalized fractal derivative.</li>
+											<li>\(f^\beta(t)\) represents the function \(f(t)\) raised to the power \(\beta\).</li>
+										</ul>
+										
+										<p><strong>Derivation:</strong></p>
+										<ol>
+											<li>Start with the basic fractal derivative:
+												<p>\[ \frac{\partial f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f(t_1) - f(t)}{t_1^\alpha - t^\alpha} \]</p>
+											</li>
+											<li>Extend to higher orders by raising \(f(t)\) to the power \(\beta\):
+												<p>\[ \frac{\partial^\beta f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f^\beta(t_1) - f^\beta(t)}{t_1^\alpha - t^\alpha} \]</p>
+											</li>
+										</ol>
+										
+										<h4>Diagram: Generalized Fractal Derivative</h4>
+										<!-- Diagram placeholder -->
+										<a href="#" class="image fit"><img src="images/Generalized_Fractal_Derivative.png" alt="Generalized Fractal Derivative" /></a>
+										
+										<h4>Step 4: Fractal Sets and Derivatives</h4>
+										
+										<p><strong>Definition for Fractal Sets:</strong></p>
+										
+										<p>For a function \(y(t)\) defined on a fractal set \(F^\alpha\), the fractal derivative at a point \(t\) within this set considers the fractal measure \(S_F^\alpha\), which represents the fractal geometry of the set.</p>
+										
+										<p><strong>Formula:</strong></p>
+										<p>\[ D_F^\alpha y(t) = \begin{cases}
+										\underset{x \to t}{\lim} \frac{y(x) - y(t)}{S_F^\alpha(x) - S_F^\alpha(t)}, & \text{if } t \in F; \\
+										0, & \text{otherwise}.
+										\end{cases} \]</p>
+										<p>where:</p>
+										<ul>
+											<li>\(D_F^\alpha\) denotes the fractal derivative on the fractal set \(F^\alpha\).</li>
+											<li>\(S_F^\alpha\) represents the fractal measure.</li>
+											<li>\(y(t)\) is the function defined on the fractal set.</li>
+											<li>\(x\) and \(t\) are points in the fractal set.</li>
+										</ul>
+										
+										<p><strong>Derivation:</strong></p>
+										<ol>
+											<li>Start with the generalized fractal derivative:
+												<p>\[ \frac{\partial^\beta f(t)}{\partial t^\alpha} = \lim_{t_1 \to t} \frac{f^\beta(t_1) - f^\beta(t)}{t_1^\alpha - t^\alpha} \]</p>
+											</li>
+											<li>Apply the definition to fractal sets:
+												<p>\[ D_F^\alpha y(t) = \lim_{x \to t} \frac{y(x) - y(t)}{S_F^\alpha(x) - S_F^\alpha(t)} \]</p>
+											</li>
+											<li>Introduce the condition for points within the fractal set:
+												<p>\[ D_F^\alpha y(t) = \begin{cases}
+													\underset{x \to t}{\lim} \frac{y(x) - y(t)}{S_F^\alpha(x) - S_F^\alpha(t)}, & \text{if } t \in F; \\
+													0, & \text{otherwise}.
+												\end{cases} \]</p>
+											</li>
+										</ol>
+										
+										<h4>Diagram: Fractal Set and Derivative</h4>
+										<!-- Diagram placeholder -->
+										<a href="#" class="image fit"><img src="images/Fractal_Set_Derivative.png" alt="Fractal Set and Derivative" /></a>
+										
+										<h3>Applications in Data Science</h3>
+										
+										<h4>Data Points</h4>
+										<p>Data points represent individual pieces of data collected for analysis. In fractal analysis, these points can reveal complex, non-linear relationships that are not visible through traditional methods.</p>
+
+										<h4>Linearity</h4>
+										<p>Traditional linear models assume a straight-line relationship between variables. Fractal derivatives help model non-linear relationships, providing more accurate representations of complex data.</p>
+
+										<h4>Complex Systems</h4>
+										<p>Fractals are ideal for modeling complex systems with many interacting components. They capture the intricacies and interdependencies within the system, offering deeper insights.</p>
+
+										<h4>Dimension Reduction</h4>
+										<p>Techniques like Principal Component Analysis (PCA) reduce data dimensionality while preserving essential structures. Fractal methods enhance this by maintaining multi-scale patterns in the reduced dimensions.</p>
+
+										<h4>Anomaly Detection</h4>
+										<p>Fractal derivatives are powerful tools for identifying unusual patterns that deviate from expected behavior. They are particularly useful in time series and spatial data analysis for detecting anomalies.</p>
+
+										<h4>Feature Extraction</h4>
+										<p>Feature extraction involves deriving informative features from raw data. Fractal features capture the inherent multi-scale patterns and textures, improving the performance of machine learning models.</p>
+										</ul>
+										
+										<h3>Practical Example and Application</h3>
+										
+										<h4>Application in Anomalous Diffusion</h4>
+										<p>The fractal derivative models anomalous diffusion processes, described by:</p>
+										<p>\[ \frac{du(x, t)}{dt^\alpha} = D \frac{\partial}{\partial x^\beta} \left( \frac{\partial u(x, t)}{\partial x^\beta} \right) \]</p>
+										<p>Here, \(u(x, t)\) represents the concentration of diffusing particles, \(D\) is the diffusion coefficient, and \(\alpha\) and \(\beta\) are scaling factors for time and space, respectively.</p>
+										<p>Using transformations \(t' = t^\alpha\) and \(x' = x^\beta\), the solution has a stretched Gaussian kernel:</p>
+										<p>\[ u(x, t) = \frac{1}{2 \pi t^\alpha} e^{-\frac{x^{2\beta}}{4t^\alpha}} \]</p>
+										<p>The mean squared displacement is:</p>
+										<p>\[ \langle x^2(t) \rangle \propto t^{\frac{3\alpha - \alpha\beta}{2\beta}} \]</p>
+										
+										<h3>Step-by-Step Example</h3>
+										<h4>Example Function: Fractal Derivative</h4>
+										<p>Consider \( f(t) = t^2 \). The fractal derivative with \( \alpha = 0.5 \) is:</p>
+										<p>\[ \frac{\partial f(t)}{\partial t^{0.5}} = \lim_{t_1 \to t} \frac{t_1^2 - t^2}{t_1^{0.5} - t^{0.5}} \]</p>
+										<p>By performing the limit operation, we obtain the fractal derivative at a specific \( t \).</p>
+										
+										<h3>Conclusion</h3>
+										<p>Fractals offer powerful tools for analyzing complex, non-linear systems in data science. By leveraging fractal derivatives and fractal spacetime, we can gain deeper insights and enhance model performance. These methods are invaluable for tasks such as anomaly detection, feature extraction, and modeling intricate systems.</p>
+									</div>
 							</article>
 						</section>
+
+		<!-- Pagination -->
+							
 
 					<!-- Footer -->
 						<footer>
@@ -614,10 +821,10 @@
 						<section>
 							<h3>Social</h3>
 							<ul class="icons alt">
-								<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/basseyakom/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="https://github.com/Baci-Ak?tab=repositories" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
 							</ul>
 						</section>
 					</section>
