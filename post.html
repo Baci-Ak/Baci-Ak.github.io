@@ -29,15 +29,11 @@
             text-align: center;
         }
         @media screen and (max-width: 600px) {
-            .title-text {
+            .title-text br {
+                content: '';
                 display: block;
-                font-size: 1.5em;
-            }
-        }
-        @media screen and (min-width: 601px) {
-            .title-text {
-                display: inline;
-                font-size: 2em;
+                margin: 0;
+                line-height: 0;
             }
         }
     </style>
@@ -99,7 +95,7 @@
                         engage, and innovate.</p>
                 </header>
                 <div id="Data-details" style="display: none;"></div>
-           </section>  
+           </section> 
 
                         <!-- Post -->
             <article class="post featured">
@@ -535,5 +531,7 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	</body>
+        </div>
+    </div>
+</body>
 </html>
